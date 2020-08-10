@@ -1,0 +1,34 @@
+.flex
+    display flex
+    &.-one
+        flex 1 0 0
+    &.-two
+        flex 2 0 0
+    &.-row
+        flex-direction row
+        &.-md
+            & > .-child:not(:last-child)
+                margin-right 5%
+        &.-sm
+            & > .-child:not(:last-child)
+                margin-right 2.5%
+    &.-col
+        flex-direction column
+        &.-md
+            & > .-child:not(:last-child)
+                margin-bottom 1em
+        &.-sm
+            & > .-child:not(:last-child)
+                margin-bottom .5em
+        &.-hright
+            align-items flex-end
+    &.-vcenter
+        align-items center
+    &.-vtop
+        align-items flex-start
+    &.-hcenter
+        justify-content center
+    &.-spacebetween
+        justify-content space-between
+    &.-alignright
+        justify-content flex-end

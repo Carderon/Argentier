@@ -1,0 +1,83 @@
+.entries
+    &-subtotal
+        font-size 1.2em
+    &-total
+        font-size 2em
+        margin 2em 0
+    &-month
+        font-size 2em
+        margin-bottom 1em
+    &-list
+        margin 5px
+    &-category
+        margin-bottom 1em
+        &.-red
+            .entries-list
+                border 1px $red solid
+                margin 0
+                padding 5px
+            .category-title
+                padding 5px
+                margin 0
+                display inline-block
+                background-color $red
+                color white
+        &.-blue
+            .entries-list
+                border 1px $blue solid
+                margin 0
+                padding 5px
+            .category-title
+                padding 5px
+                margin 0
+                display inline-block
+                background-color $blue
+                color white
+        &.-green
+            .entries-list
+                border 1px $green solid
+                margin 0
+                padding 5px
+            .category-title
+                padding 5px
+                margin 0
+                display inline-block
+                background-color $green
+                color white
+        &.-yellow
+            .entries-list
+                border 1px $yellow solid
+                margin 0
+                padding 5px
+            .category-title
+                padding 5px
+                margin 0
+                display inline-block
+                background-color $yellow
+                color white
+    &-type
+        font-size 1.5em
+    &-balance
+        font-size 2em
+.entry
+    &-priority
+        width 20px
+        height 20px
+        margin-right 5px
+        display flex
+        align-items center
+        justify-content center
+        cursor pointer
+        position relative
+        &:hover
+            .priority-label
+                opacity 1
+                display block
+        &.-level0
+            background-color $light-yellow
+        &.-level1
+            background-color $orange
+        &.-level2
+            background-color $red
+    &-detail
+        margin-left calc(2.5% + 20px)

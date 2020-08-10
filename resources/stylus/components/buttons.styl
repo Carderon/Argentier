@@ -1,0 +1,45 @@
+.btn
+    background-color $gray
+    border 1px solid $dark-gray
+    border none
+    border-radius 5px
+    box-sizing border-box
+    color $dark-gray
+    cursor pointer
+    font-family inherit
+    font-size 100%
+    line-height normal
+    padding .5em .75em
+    text-align center
+    text-decoration none
+    user-select none
+    vertical-align middle
+    white-space nowrap
+    zoom 1
+    &::-moz-focus-inner
+        border none
+        padding none
+    &:focus
+        outline none
+    &-active, &:active
+        border-color black
+        box-shadow 0 0 0 1px rgba( 0, 0, 0, .15 ) inset, 0 0 6px rgba( 0, 0, 0, .2 ) inset
+    &[disabled], &-disabled, &-disabled:hover, &-disabled:focus, &-disabled:active
+        background-image none
+        border none
+        box-shadow none
+        cursor not-allowed
+        opacity .4
+    &-hidden
+        display none
+    &.-primary
+        background-color $yellow
+        &:hover
+            background-color rgba($yellow, 0.75)
+    &.-success
+        background-color $green
+    &.-alert
+        background-color $red
+        color white
+        &:hover
+            background-color rgba($red, 0.75)
